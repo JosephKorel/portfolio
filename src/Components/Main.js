@@ -52,7 +52,7 @@ function Main() {
               cursorColor="#f5f3f4"
               text="<"
               textStyle={{
-                color: " #ffb84d",
+                color: " #33d7cf",
                 fontSize: "3em",
                 fontFamily: "'Ubuntu Mono', monospace",
                 fontWeight: "400",
@@ -81,7 +81,7 @@ function Main() {
               text="/>"
               startDelay={1850}
               textStyle={{
-                color: " #ffb84d",
+                color: " #33d7cf",
                 fontSize: "3em",
                 fontFamily: "'Ubuntu Mono', monospace",
                 fontWeight: "400",

@@ -18,6 +18,9 @@ function Contact(props) {
         <div className="icon-container">
           <div className="contact-icons">
             <img src="./linkedin.png" alt="LinkedIn" id="linkedin"></img>
+            <a href={"mailto:jcjosecarlos03@gmail.com"}>
+              <img src="./email.png" alt="Email" id="email"></img>
+            </a>
             <img src="./git.png" alt="GitHub" id="git"></img>
             <img src="./wpp.png" alt="WhatsApp" id="wpp"></img>
           </div>

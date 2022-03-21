@@ -63,6 +63,15 @@
   box-shadow: 5px 5px 2px 3px #000000;
 }
 
+.contact-icons img {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.1);
+}
+
 .contact-return {
   position: absolute;
   margin-left: 75%;
