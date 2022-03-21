@@ -37,7 +37,7 @@ function MyCarousel() {
     <div className="carousel">
       <div className="img-container">
         <button onClick={() => Left()} className="left-button">
-          <img src="./right.png" alt="Retroceder"></img>
+          <img src="./right white.png" alt="Retroceder"></img>
         </button>
         <div className="thumb">
           <img

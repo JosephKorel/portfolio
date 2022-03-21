@@ -13,15 +13,19 @@ function Contact(props) {
           Gostaria de ser parte de um time que me possibilite crescimento tanto
           profissional quanto pessoal. Sou proativo, aprendo rápido e estou
           sempre disposto a novos desafios.
+          <br></br>Entre em contato comigo por um dos links abaixo
         </p>
-        <div className="contact-icons">
-          <img src="./git black.png" alt="GitHub" id="git"></img>
-          <img src="./wpp black.png" alt="WhatsApp" id="wpp"></img>
-          <img src="./linkedin black.png" alt="LinkedIn" id="linkedin"></img>
+        <div className="icon-container">
+          <div className="contact-icons">
+            <img src="./linkedin.png" alt="LinkedIn" id="linkedin"></img>
+            <img src="./git.png" alt="GitHub" id="git"></img>
+            <img src="./wpp.png" alt="WhatsApp" id="wpp"></img>
+          </div>
+          <button className="contact-return" onClick={() => Return()}>
+            <img src="./return.png" alt="Voltar"></img>
+            Voltar
+          </button>
         </div>
-        <button className="contact-return" onClick={() => Return()}>
-          Voltar
-        </button>
       </div>
     </div>
   );

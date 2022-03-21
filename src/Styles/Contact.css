@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.767);
-  z-index: 1;
+  backdrop-filter: blur(3.5px);
+  z-index: 2;
   perspective: 300px;
 }
 
@@ -19,26 +19,34 @@
 .contact-content {
   width: 60%;
   height: 50%;
-  background-color: #f0f3fa;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 2px 3px hsla(36, 100%, 55%, 1);
-  box-shadow: 5px 5px 2px 3px hsla(36, 100%, 55%, 1);
+  background-color: #edf2fb;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
+  border-radius: 22px;
   animation: showup 0.3s;
   transform: translate3d(1px, 1px, -1000px);
   animation-fill-mode: forwards;
-  z-index: 2;
   font-family: "Montserrat", sans-serif;
 }
 
 .contact-content p {
   margin: auto;
+  margin-top: 50px;
   width: 70%;
   padding: 10px;
   color: #080c1a;
   font-size: 1.7em;
   font-weight: 400;
+}
+
+.icon-container {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .contact-icons {
@@ -47,18 +55,40 @@
   justify-content: space-evenly;
   width: 50%;
   margin: auto;
-  margin-top: 20%;
   text-align: center;
-  background: rgba(255, 255, 255, 0);
+  background: #292f36;
   border-radius: 16px;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
+  border: none;
   -webkit-box-shadow: 5px 5px 2px 3px #000000;
   box-shadow: 5px 5px 2px 3px #000000;
 }
 
 .contact-return {
-  float: right;
-  margin-right: 15%;
-  /*  margin-top: 35%; */
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffa31a;
+  border: none;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.2s;
+  transform: translate3d(1, 1, 1);
+  perspective: 200px;
+}
+
+.contact-return:hover {
+  transform: translate3d(-3px, -3px, -4px);
+  background-color: #ffa31a;
+  color: white;
+  font-weight: bold;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
 }

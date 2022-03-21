@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.767);
-  z-index: 1;
+  backdrop-filter: blur(6px);
+  z-index: 2;
   perspective: 300px;
 }
 
@@ -19,30 +19,7 @@
 .projects-content {
   width: 80%;
   height: 80%;
-  background: hsla(38, 16%, 76%, 1);
-
-  background: linear-gradient(
-    360deg,
-    hsla(38, 16%, 76%, 1) 0%,
-    hsla(210, 9%, 31%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    360deg,
-    hsla(38, 16%, 76%, 1) 0%,
-    hsla(210, 9%, 31%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    360deg,
-    hsla(38, 16%, 76%, 1) 0%,
-    hsla(210, 9%, 31%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CCC5B9", endColorstr="#495057", GradientType=1 );
-  border: none;
-  border-radius: 20px;
-  box-shadow: #8d99ae 0px 15px 50px -12px;
+  color: black;
   animation: showup 0.3s;
   transform: translate3d(1px, 1px, -1000px);
   animation-fill-mode: forwards;
@@ -52,7 +29,7 @@
   position: absolute;
   margin-left: 60%;
   margin-top: 30%;
-  background-color: #d1ddff;
+  background-color: #edf2fb;
   border: none;
   border-radius: 12px;
   font-family: "Montserrat", sans-serif;

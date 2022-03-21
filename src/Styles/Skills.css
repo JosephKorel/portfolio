@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.767);
-  z-index: 1;
+  backdrop-filter: blur(3.5px);
+  z-index: 2;
   perspective: 300px;
   font-family: "Montserrat", sans-serif;
 }
@@ -20,30 +20,15 @@
 .skill-content {
   width: 80%;
   height: 80%;
-  background: hsla(36, 100%, 55%, 1);
-
-  background: linear-gradient(
-    360deg,
-    hsla(36, 100%, 55%, 1) 0%,
-    hsla(46, 100%, 65%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    360deg,
-    hsla(36, 100%, 55%, 1) 0%,
-    hsla(46, 100%, 65%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    360deg,
-    hsla(36, 100%, 55%, 1) 0%,
-    hsla(46, 100%, 65%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA31A", endColorstr="#FFD54B", GradientType=1 );
-  border: none;
-  border-radius: 20px;
-  box-shadow: #d1ddff 0px 15px 50px -12px;
+  border-left: 1px solid #343a40;
+  border-top: 1px solid #343a40;
+  border-radius: 28px;
+  animation: showup 0.2s;
+  transform: translate3d(1px, 1px, -1000px);
+  animation-fill-mode: forwards;
+  color: black;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
   animation: showup 0.3s;
   transform: translate3d(1px, 1px, -1000px);
   animation-fill-mode: forwards;
@@ -58,11 +43,11 @@
   margin-top: 20px;
   text-align: justify;
   width: 70%;
-
   background-color: #edf2fb;
   border: none;
   border-radius: 22px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
 }
 
 .react {
@@ -75,12 +60,15 @@
   margin: auto;
   margin-top: 10%;
   text-align: center;
-  background: rgba(255, 255, 255, 0);
+  background-color: #000018;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 5px 5px 2px 3px #edf2fb;
+  box-shadow: 5px 5px 2px 3px #edf2fb;
+  border-left: 1px solid #edf2fb;
+  border-top: 1px solid #edf2fb;
+  transform: translateX(5000px);
+  animation: right-slide 0.5s forwards;
+  opacity: 0;
 }
 
 #html {
@@ -111,7 +99,7 @@
   float: right;
   margin-right: 15%;
   margin-top: 8%;
-  background-color: #d1ddff;
+  background-color: #edf2fb;
   border: none;
   border-radius: 12px;
   font-family: "Montserrat", sans-serif;
