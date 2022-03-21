@@ -1,0 +1,121 @@
+.about {
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  z-index: 2;
+  perspective: 300px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: none;
+  border-radius: 28px;
+  animation: showup 0.2s;
+  transform: translate3d(1px, 1px, -1000px);
+  animation-fill-mode: forwards;
+  color: black;
+}
+
+.my-image {
+  border-radius: 100px;
+  border: 3px solid #e5e5e5;
+  background-color: #d1ddff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.description {
+  color: black;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  background-color: #cfdbd5;
+  padding-left: 10px;
+  border-radius: 20px;
+  width: 65%;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
+}
+
+.description h1 {
+  /*  font-family: "Fredoka", sans-serif; */
+  font-size: 2.3em;
+  font-weight: 600;
+}
+
+.description h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.description p {
+  width: 90%;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+.return {
+  margin: 0;
+  padding: 0;
+}
+
+.return-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 65%;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 35%;
+  position: absolute;
+  background-color: #d1ddff;
+  border: none;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.2s;
+  transform: translate3d(1, 1, 1);
+  perspective: 200px;
+}
+
+.return-button:hover {
+  transform: translate3d(-3px, -3px, -4px);
+  background-color: #ffa31a;
+  color: white;
+  font-weight: bold;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
+}
+
+@keyframes showup {
+  from {
+    opacity: 0.2;
+    transform: translate3d(1px, 1px, -10000px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

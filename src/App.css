@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+.hello {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #e5ecff;
 }
 
-.App-logo {
-  height: 40vmin;
+.header h1 {
+  text-align: center;
+  color: #e5ecff;
+  height: 100px;
+}
+
+.card-container {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-left: 40px;
+  width: 200px;
+  height: 300px;
+  font-size: 20px;
+  transition: 0.5s;
+  border: 2px solid #d3deff;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #3656b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: transparent;
+  font-size: 1.6em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card:hover {
+  box-shadow: #4d4dff 0px 25px 50px -12px;
+  background-color: #ffa31a;
+  border: none;
+  width: 250px;
+  height: 350px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.card img {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card p {
+  pointer-events: none;
+}
+
+#card-1 {
+  animation: card-slide 4.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#card-2 {
+  animation: card-slide 4.7s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#card-3 {
+  animation: card-slide 4.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#card-4 {
+  animation: card-slide 4.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#type {
+  position: absolute;
+}
+
+.glitch {
+  font-size: 4rem;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #f9b4b9,
+    0.025em 0.04em 0 #cc0f39;
+  animation: glitch 725ms infinite;
+  font-family: "Press Start 2P", cursive;
+}
+
+#glitch {
+  transform: scale3d(1.3, 1.3, -15.3);
+  animation: opacity 4.7s;
+  animation-fill-mode: forwards;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #cc0f39;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #cc0f39;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #cc0f39;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #cc0f39;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #cc0f39;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #cc0f39;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #cc0f39;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
 
-.App-link {
-  color: #61dafb;
-}
+  30% {
+    opacity: 0;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  98% {
+    opacity: 0.01;
+    transform: scale3d(-1.3, -1.3, -25.3);
+  }
+
+  99% {
+    opacity: 0.5;
+    transform: scale3d(3.3, 3.3, 5);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes card-slide {
+  97% {
+    opacity: 0;
+    transform: translate(0, 500px);
+  }
+
+  99% {
+    opacity: 1;
+    transform: translate(0, -50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

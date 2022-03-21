@@ -1,13 +1,48 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: hsla(176, 68%, 12%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(176, 68%, 12%, 1) 0%,
+    hsla(210, 100%, 5%, 1) 65%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(176, 68%, 12%, 1) 0%,
+    hsla(210, 100%, 5%, 1) 65%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(176, 68%, 12%, 1) 0%,
+    hsla(210, 100%, 5%, 1) 65%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A3431", endColorstr="#000D1A", GradientType=1 );
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Verde dos guri
+background: hsla(159, 35%, 45%, 1);
+
+background: radial-gradient(circle, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 56%);
+
+background: -moz-radial-gradient(circle, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 56%);
+
+background: -webkit-radial-gradient(circle, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 56%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", endColorstr="#0A3431", GradientType=1 );
+ */

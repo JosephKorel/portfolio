@@ -1,0 +1,64 @@
+.contact {
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.767);
+  z-index: 1;
+  perspective: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.contact-content {
+  width: 60%;
+  height: 50%;
+  background-color: #f0f3fa;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 2px 3px hsla(36, 100%, 55%, 1);
+  box-shadow: 5px 5px 2px 3px hsla(36, 100%, 55%, 1);
+  animation: showup 0.3s;
+  transform: translate3d(1px, 1px, -1000px);
+  animation-fill-mode: forwards;
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-content p {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  color: #080c1a;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
+}
+
+.contact-return {
+  float: right;
+  margin-right: 15%;
+  /*  margin-top: 35%; */
+}
