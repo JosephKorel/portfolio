@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(3.5px);
+  backdrop-filter: blur(4.5px);
   z-index: 2;
   perspective: 300px;
 }
@@ -37,7 +37,7 @@
   width: 70%;
   padding: 10px;
   color: #080c1a;
-  font-size: 1.7em;
+  font-size: 1.7vmax;
   font-weight: 400;
 }
 
@@ -100,4 +100,33 @@
   font-weight: bold;
   -webkit-box-shadow: 5px 5px 2px 3px #000000;
   box-shadow: 5px 5px 2px 3px #000000;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 650px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-icons {
+    width: 80%;
+  }
+  .contact-icons img {
+    width: 50px;
+  }
+
+  .contact-content {
+    width: 95%;
+  }
+
+  .contact-content p {
+    font-size: 2.5vmax;
+    width: 95%;
+  }
+
+  .contact-return {
+    margin-top: 70%;
+  }
 }

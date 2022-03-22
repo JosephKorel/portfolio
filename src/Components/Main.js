@@ -44,16 +44,15 @@ function Main() {
         contactshow={contactshow}
         setContactshow={setContactshow}
       ></Contact>
-      <div className="header">
-        <div className="hello">
+      <div className="header-container">
+        <div className="header-type">
           <h1>
-            {" "}
             <TypeWriterEffect
               cursorColor="#f5f3f4"
               text="<"
               textStyle={{
                 color: " #33d7cf",
-                fontSize: "3em",
+                fontSize: "5vmax",
                 fontFamily: "'Ubuntu Mono', monospace",
                 fontWeight: "400",
               }}
@@ -66,7 +65,7 @@ function Main() {
               textSize="3em"
               text="Hello World!"
               textStyle={{
-                fontSize: "3em",
+                fontSize: "5vmax",
                 fontFamily: "'Ubuntu Mono', monospace",
                 fontWeight: "400",
                 fontStyle: "italic",
@@ -82,7 +81,7 @@ function Main() {
               startDelay={1850}
               textStyle={{
                 color: " #33d7cf",
-                fontSize: "3em",
+                fontSize: "5vmax",
                 fontFamily: "'Ubuntu Mono', monospace",
                 fontWeight: "400",
               }}
@@ -95,6 +94,7 @@ function Main() {
             text="Prazer, José Carlos"
             textStyle={{
               fontFamily: "'Ubuntu Mono', monospace",
+              fontSize: "3.5vmax",
               fontWeight: "500",
               fontStyle: "italic",
             }}

@@ -40,12 +40,7 @@ function MyCarousel() {
           <img src="./right white.png" alt="Retroceder"></img>
         </button>
         <div className="thumb">
-          <img
-            src={img[index]}
-            width="700px"
-            className={classactive}
-            name="thumbs"
-          ></img>
+          <img src={img[index]} className={classactive}></img>
         </div>
         <button onClick={() => Right()} className="right-button">
           <img src="./right white.png" alt="Avançar"></img>
