@@ -6,7 +6,7 @@ function MyCarousel(props) {
   const projectTitle = ["To do list", "Contador de calorias", "Site pessoal"];
   const projectDesc = [
     "Meu primeiro projeto realizado em React. A ideia aqui foi utilizar um hook com o useState sendo um array vazio e um objeto que recebe o input do usuário. Ao clicar em adicionar, o objeto é adicionado ao array vazio e é retornado este array.",
-    "Além de programação e idiomas, também sou um àvido praticante de musculação e dieta, e para isso aplicativos para monitorar as calorias são indispensáveis. Também feito em React, o usuário coloca o alimento e a quantidade a ser consumida. Após isso ele adiciona os valores da tabela nutricional e adiciona o alimento. Também fiz uma versão traduzida para coreano como forma de estudo.",
+    "Além de programação e idiomas, também sou um ávido praticante de musculação e dieta, e para isso aplicativos para monitorar as calorias são indispensáveis. Também feito em React, o usuário coloca o alimento e a quantidade a ser consumida. Após isso ele adiciona os valores da tabela nutricional e adiciona o alimento. Também fiz uma versão traduzida para coreano como forma de estudo.",
     "Apesar de também ter sido feito utilizando React, trabalhei também bastante CSS e efeitos de animação, no intuito de dar um dinamismo a mais para o site. Além disso o site também é totalmente responsivo.",
   ];
 

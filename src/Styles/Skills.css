@@ -166,3 +166,18 @@
     font-size: 3.5vmax;
   }
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1450px) {
+  .icons {
+    width: 80%;
+  }
+
+  .icons img {
+    width: 15%;
+  }
+
+  .skill-content p {
+    width: 90%;
+    font-size: 2vmax;
+  }
+}
