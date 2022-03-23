@@ -9,13 +9,9 @@ function Projects(props) {
 
   return (
     <div className={props.projectshow == true ? "projects" : "projects hide"}>
-      <div className="projects-content" id="project-content">
-        <MyCarousel></MyCarousel>
+      <div className="projects-content">
+        <MyCarousel Return={Return}></MyCarousel>
       </div>
-      <button className="project-return" onClick={() => Return()}>
-        <img src="./return.png" alt="Voltar"></img>
-        Voltar
-      </button>
     </div>
   );
 }

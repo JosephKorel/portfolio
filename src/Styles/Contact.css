@@ -3,7 +3,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,24 +16,37 @@
   display: none;
 }
 
-.contact-content {
+.contact-container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 60%;
-  height: 50%;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  background-color: #edf2fb;
-  -webkit-box-shadow: 5px 5px 2px 3px #000000;
-  box-shadow: 5px 5px 2px 3px #000000;
-  border-radius: 22px;
   animation: showup 0.3s;
   transform: translate3d(1px, 1px, -1000px);
   animation-fill-mode: forwards;
   font-family: "Montserrat", sans-serif;
 }
 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  background-color: #edf2fb;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
+  border-radius: 22px;
+}
+
 .contact-content p {
   margin: auto;
-  margin-top: 50px;
+  text-align: justify;
+  text-indent: 0.5em;
+  margin-top: 40px;
   width: 70%;
   padding: 10px;
   color: #080c1a;
@@ -41,20 +54,12 @@
   font-weight: 400;
 }
 
-.icon-container {
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-
 .contact-icons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 50%;
-  margin: auto;
+  margin-bottom: 2%;
   text-align: center;
   background: #292f36;
   border-radius: 16px;
@@ -73,16 +78,15 @@
 }
 
 .contact-return {
-  position: absolute;
-  margin-left: 75%;
-  margin-top: 10px;
+  margin-left: 70%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #ffa31a;
+  background-color: #edf2fb;
   border: none;
   border-radius: 12px;
   font-family: "Montserrat", sans-serif;
@@ -105,28 +109,53 @@
 /* Responsividade */
 
 @media screen and (max-width: 650px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
+  .contact-container {
+    width: 95%;
+  }
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-content p {
+    margin-top: 2%;
   }
 
   .contact-icons {
     width: 80%;
+    margin-bottom: 5%;
   }
   .contact-icons img {
-    width: 50px;
-  }
-
-  .contact-content {
-    width: 95%;
+    width: 40px;
   }
 
   .contact-content p {
     font-size: 2.5vmax;
     width: 95%;
   }
+}
 
-  .contact-return {
-    margin-top: 70%;
+@media screen and (min-width: 650px) and (max-width: 1300px) {
+  .contact-container {
+    width: 95%;
+  }
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-content p {
+    margin-top: 2%;
+  }
+
+  .contact-icons {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .contact-icons img {
+    width: 40px;
+  }
+
+  .contact-content p {
+    font-size: 2.5vmax;
+    width: 95%;
   }
 }

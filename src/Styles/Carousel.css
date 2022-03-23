@@ -1,4 +1,8 @@
 .carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 5;
 }
 
@@ -8,12 +12,8 @@
   justify-content: space-around;
 }
 
-.thumb {
-  margin-top: 30px;
-}
-
-.thumb img {
-  width: 700px;
+#project-thumb {
+  max-width: 700px;
   border-right: 1px solid white;
   border-radius: 22px;
   -webkit-box-shadow: -4px 7px 6px 2px #000000;
@@ -30,7 +30,7 @@
   background-color: #edf2fb;
   -webkit-box-shadow: -7px 7px 3px 4px #000000;
   box-shadow: -7px 7px 3px 4px #000000;
-  width: 50%;
+  width: 60%;
   font-family: "Montserrat", sans-serif;
   color: #000000;
 }
@@ -41,8 +41,9 @@
 }
 
 .label p {
+  text-indent: 0.5em;
   text-align: justify;
-  font-size: 1vmax;
+  font-size: 2vmin;
   padding: 5px;
 }
 
@@ -96,6 +97,36 @@
 .right-button:hover,
 .left-button:hover {
   transform: scale(1.1);
+}
+
+.project-return {
+  margin-left: 53%;
+  margin-top: 1%;
+  background-color: #edf2fb;
+  border: none;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.2s;
+  transform: translate3d(1, 1, 1);
+  perspective: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  animation: showup 0.3s;
+}
+
+.project-return:hover {
+  transform: translate3d(-3px, -3px, -4px);
+  background-color: #ffa31a;
+  color: white;
+  font-weight: bold;
+  -webkit-box-shadow: 5px 5px 2px 3px #000000;
+  box-shadow: 5px 5px 2px 3px #000000;
 }
 
 @keyframes right-direction {
@@ -165,24 +196,12 @@
 /* Responsividade */
 
 @media screen and (max-width: 650px) {
-  .img-container button {
-    position: absolute;
+  .img-container {
+    margin-top: 5%;
   }
 
-  .thumb {
-    margin-top: 1px;
-  }
-
-  .left-button {
-    position: absolute;
-    margin-right: 90%;
-    z-index: 5;
-  }
-
-  .right-button {
-    position: absolute;
-    margin-left: 90%;
-    z-index: 5;
+  #project-thumb {
+    max-width: 300px;
   }
 
   .left-button img {
@@ -193,17 +212,8 @@
     width: 30px;
   }
 
-  .thumb {
-    margin-top: 0;
-  }
-  .thumb img {
-    max-width: 350px;
-  }
-
   .label {
     width: 95%;
-    /*  padding-left: 10px;
-    padding-right: 10px; */
   }
 
   .label h1 {
@@ -215,5 +225,34 @@
   .label p {
     padding: 5px;
     font-size: 2.5vmax;
+  }
+
+  .project-return {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1650px) {
+  body {
+    overflow-y: auto;
+  }
+  .img-container {
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #project-thumb {
+    width: 90%;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .label p {
+    font-size: 2.3vmin;
   }
 }

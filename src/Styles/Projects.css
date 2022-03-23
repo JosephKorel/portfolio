@@ -1,17 +1,9 @@
-/* .project-father {
-  right: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-} */
-
 .projects {
   right: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +17,7 @@
 }
 
 .projects-content {
+  position: sticky;
   width: 80%;
   height: 80%;
   color: black;
@@ -33,51 +26,9 @@
   animation-fill-mode: forwards;
 }
 
-.project-return {
-  position: absolute;
-  margin-left: 60%;
-  margin-top: 30%;
-  background-color: #edf2fb;
-  border: none;
-  border-radius: 12px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: 0.2s;
-  transform: translate3d(1, 1, 1);
-  perspective: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  animation: showup 0.3s;
-}
-
-.project-return:hover {
-  transform: translate3d(-3px, -3px, -4px);
-  background-color: #ffa31a;
-  color: white;
-  font-weight: bold;
-  -webkit-box-shadow: 5px 5px 2px 3px #000000;
-  box-shadow: 5px 5px 2px 3px #000000;
-}
-
 @media screen and (max-width: 650px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
   .projects-content {
     width: 100%;
-    height: 80%;
-  }
-
-  .project-return {
-    position: relative;
+    height: 100%;
   }
 }
