@@ -223,23 +223,16 @@
   body {
     overflow-y: auto;
   }
-  .card-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15%;
-  }
+
   .card-container {
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 15%;
     margin-top: 0;
-    margin-right: 0;
   }
 
-  .card {
-    margin-bottom: 5%;
-  }
+  
 }

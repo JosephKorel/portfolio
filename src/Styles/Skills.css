@@ -97,6 +97,36 @@
   opacity: 0;
 }
 
+#git-icon{
+  transform: translateX(5000px);
+  animation: right-slide 1.9s forwards;
+  opacity: 0;
+}
+
+#firebase{
+  transform: translateX(5000px);
+  animation: right-slide 2.1s forwards;
+  opacity: 0;
+}
+
+#tailwind{
+  transform: translateX(5000px);
+  animation: right-slide 2.3s forwards;
+  opacity: 0;
+}
+
+#mui{
+  transform: translateX(5000px);
+  animation: right-slide 2.5s forwards;
+  opacity: 0;
+}
+
+#chakra{
+  transform: translateX(5000px);
+  animation: right-slide 2.7s forwards;
+  opacity: 0;
+}
+
 .skill-return {
   margin-top: 5%;
   margin-left: 65%;
@@ -185,16 +215,21 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1450px) {
+
+  .skill-content{
+    width: 96%;
+  }
+
   .icons {
-    width: 80%;
+    width: 100%;
   }
 
   .icons img {
-    width: 15%;
+    width: 110px;
   }
 
   .skill-content p {
-    width: 90%;
+    width: 95%;
     font-size: 2vmax;
   }
 }

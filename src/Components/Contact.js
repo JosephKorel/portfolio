@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MyCV from "../../src/my_cv.pdf";
+import cv from "../../src/cv.pdf";
 
 import "../Styles/Contact.css";
 
@@ -19,7 +19,7 @@ function Contact(props) {
           </p>
           <div className="contact-icons">
             <a
-              href="https://www.linkedin.com/in/jos%C3%A9-carlos-rolim-etchepare-13669b235/"
+              href="https://www.linkedin.com/in/josecretchepare"
               target="_blank"
             >
               <img src="./linkedin.png" alt="LinkedIn"></img>
@@ -36,7 +36,7 @@ function Contact(props) {
             >
               <img src="./wpp.png" alt="WhatsApp"></img>
             </a>
-            <a href={MyCV} download="my_cv.pdf">
+            <a href={cv} download="cv.pdf">
               <img src="./cv.png" alt="Curriculum"></img>
             </a>
           </div>

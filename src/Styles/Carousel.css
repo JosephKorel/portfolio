@@ -23,7 +23,7 @@
 .label {
   text-align: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 12px;
   padding: 0;
   border: 1px solid black;
   border-radius: 22px;
@@ -36,7 +36,6 @@
 }
 
 .label h1 {
-  padding-top: 5px;
   color: black;
 }
 
@@ -44,7 +43,8 @@
   text-indent: 0.5em;
   text-align: justify;
   font-size: 2vmin;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .active-right {
@@ -101,7 +101,7 @@
 
 .project-return {
   margin-left: 53%;
-  margin-top: 1%;
+  margin-top: 3%;
   background-color: #edf2fb;
   border: none;
   border-radius: 12px;

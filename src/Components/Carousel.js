@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import "../Styles/Carousel.css";
 
 function MyCarousel(props) {
-  const img = ["./todo edited.png", "./macro original.png", "./portfolio.png"];
-  const projectTitle = ["To do list", "Contador de calorias", "Site pessoal"];
+  const img = ["./dic thumb.png", "./diet thumb.png", "./blog thumb.png"];
+  const projectTitle = ["English Dictionary", "Diet App", "Blog"];
   const projectDesc = [
-    "Meu primeiro projeto realizado em React. A ideia aqui foi utilizar um hook com o useState sendo um array vazio e um objeto que recebe o input do usuário. Ao clicar em adicionar, o objeto é adicionado ao array vazio e é retornado este array.",
-    "Além de programação e idiomas, também sou um ávido praticante de musculação e dieta, e para isso aplicativos para monitorar as calorias são indispensáveis. Também feito em React, o usuário coloca o alimento e a quantidade a ser consumida. Após isso ele adiciona os valores da tabela nutricional e adiciona o alimento. Também fiz uma versão traduzida para coreano como forma de estudo.",
-    "Apesar de também ter sido feito utilizando React, trabalhei também bastante CSS e efeitos de animação, no intuito de dar um dinamismo a mais para o site. Além disso o site também é totalmente responsivo.",
+    "Um dicionário de inglês que conta com definições, frases de exemplo e pronúncia. Há também uma seção para colar um texto e pesquisar as palavras ao clicar, o que facilita muito a leitura de notícias, artigos e etc. Além disso, é possível salvar palavras e posteriormente filtrá-las em substantivos, verbos ou adjetivos. ",
+    "Além de programação e idiomas, também sou um ávido praticante de musculação e dieta, e para isso aplicativos para monitorar as calorias são indispensáveis. O usuário adiciona uma refeição, o horário, e após isso cada alimento a ser consumido. Os valores nutricionais são provenientes de um banco de dados de uma tabela de composição brasileira. O usuário também pode adicionar informações pessoais para obter suas meta diária de nutrientes para seu objetivo específico. Ademais, há uma seção para consultar cada alimento.",
+    "Aplicação feita com o firebase, onde é possível criar uma conta com email e senha ou entrar com sua conta do Google. Uma vez logado, o usuário pode fazer postagens, curtir e comentar. ",
   ];
 
   const projectlink = [
-    "https://josephkorel-reacttodo.web.app/",
-    "https://josephkorel.github.io/macro-count/",
-    "https://josephkorel.github.io/portfolio/",
+    "https://josephkorel.github.io/dictionary/",
+    "https://josephkorel.github.io/diet-app/",
+    "https://josephkorel.github.io/blog-app/",
   ];
   const [index, setIndex] = useState(0);
 
@@ -31,8 +31,6 @@ function MyCarousel(props) {
     classactive == "active-right"
       ? setClassactive("active-right-2")
       : setClassactive("active-right");
-
-    console.log(projectlink);
   }
   return (
     <div className="carousel">
